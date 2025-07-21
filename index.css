@@ -216,4 +216,82 @@ button:hover{
   
   color: white;
 }
+.dreamtext{
+  /* border: 2px solid black; */
+  margin-top: 50px;
+  text-align: center;
+  
+}
+.ourstory{
+  text-align: center;
+  /* border: 2px solid black; */
+  color: blueviolet
+}
+.about{
+  text-align: center;
+  border: 2px solid black;
+  margin: 20px;
+  color: #4255A4;
+}
+.story{
+  color: #212529;
+}
+.aboutus{
+  
+  margin: 50px;
+  width: 900px;
+  margin-left: 150px;
+  padding: 30px;
+  font-size: large;
+  text-align: center;
+  
+}
+.circle-icon {
+       width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #a78bfa, #ec4899); /* purple to pink */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      margin-left: 110px;
+    }
 
+    .circle-icon svg {
+      width: 32px;
+      height: 32px;
+      stroke: white;
+      stroke-width: 2.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .container1 {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .block {
+      background-color: #ffffff;
+      padding: 24px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .block:hover {
+      transform: translateY(-5px);
+    }
+
+    .block h2 {
+      color: #4255A4;
+      margin-bottom: 10px;
+    }
+
+    .block p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
