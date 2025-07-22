@@ -325,6 +325,7 @@ button:hover{
   margin-bottom: 60px;
   flex-wrap: wrap;
   padding: 40px;
+  margin-left: 50px;
 }
 
 .courses-info-left {
