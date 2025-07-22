@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-  <header class="hero">
+  <header class="hero" id="home">
     <nav class="navbar">
       <div class="logo">
          <img src="images/logo.png" alt="" title="FaangTechLab logo">
@@ -15,13 +15,12 @@
       <ul class="nav-links">
         <li><a href="#home" title="Home">Home</a></li>
         <li><a href="#AboutUs" title="AboutUs">AboutUs</a></li>
-        <li><a href="#" title="Courses">Courses</a></li>
+        <li><a href="#courses" title="Courses">Courses</a></li>
         <!-- <li><a href="#">Blog</a></li> -->
         <li><a href="#" title="ContactUs">ContactUs</a></li>
       </ul>
       <div class="nav-buttons">
         <button class="join-btn" title="Join">JoinUs</button>
-        <button class="login-btn" title="Login">Log In</button>
       </div>
     </nav>
      <div class="wave-svg">
@@ -30,6 +29,12 @@
           d="M0,140 C360,290 720,90 1080,150 C1320,230 1440,10 1440,50 L1440,0 L0,0 Z"></path>
       </svg>
     </div>
+    
+    <br>
+    <br>
+    <br>
+    
+     
 
     <section class="hero-content">
       <h1>Empowering Minds Building Future With FAANGTECHLAB Platform</h1>
@@ -37,6 +42,7 @@
         Experience coding at FaangTechLab - it's for everyone! Our practice-oriented courses make starting your IT career effortless. Join us today to master coding and launch a successful tech career. With personalaised mentorship and real-time projects, we ensure you're equipped with industry-relevant skills. faangTechLab is your stepping stone to a brighter future in tech!
       </p>
     </section>
+    <button>Join us</button>
     <!-- <hr> -->
     <div class="dreamtext"><h1>Our Dream is Transforming Learning Globally</h1>
       <br>
@@ -74,23 +80,40 @@
     </div>
 </div>
   </header>
+  
   <h1 class="about">About us</h1>
   <div class="aboutus" id="AboutUs">
-    <br>
-    <h2 class="ourstory"><b>Our Story</b></h2>
-    <br>
-    <br>
-    <br>
-    <p class="story">Seeing many MS students struggle to find their first job in the USA made me realize something important. Many of us weren't properly prepared before stepping into the real world.
+    <div class="story-card">
+      <h2 class="ourstory"><b>Our Story</b></h2>
+      <br>
+      <br>
+      <p class="story">Seeing many MS students struggle to find their first job in the USA made me realize something important. Many of us weren't properly prepared before stepping into the real world.
 That's whenI had an idea: why not teach and guide engineering students the right way before they graduate?
 Why not give them the skills and confidence they need to succeed?
 That thought and idea made me to come back to India and
 dedicate myself to this mission. It hasn't been easy, but we're making it happen.
-When it started it's just “me, "now we've grown into a team of
+When it started it's just "me, "now we've grown into a team of
 70 passionate people at Faang Tech Lab. This is my way of giving back, and it fills my heart every single day.</p>
+    </div>
+
+    <div class="founders-section">
+      <h2 class="founders-title">Meet Our Founders</h2>
+      <div class="founders-grid">
+        <div class="founder-card">
+          <img src="images/venkat.jpg" alt="Founder 1" class="founder-image">
+          <h3 class="founder-name">Venkat</h3>
+          <p class="founder-designation">Managing Director</p>
+        </div>
+        
+        <div class="founder-card">
+          <img src="images/ashok.jpg" alt="Founder 2" class="founder-image">
+          <h3 class="founder-name">Ashok</h3>
+          <p class="founder-designation">Co-Founder</p>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="circle-icon">
-    <!-- SVG: Upward trend arrow -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
        <path d="M3 17L9 11L13 15L21 7" />
     </svg>
@@ -111,6 +134,57 @@ When it started it's just “me, "now we've grown into a team of
     <p>Join our offline programs and become a part of a growing community of learners from across the region.</p>
   </div>
 </div> 
+
+<section id="courses" class="courses-section">
+  <div class="courses-container">
+    <h1 class="courses-title">Courses We Offered</h1>
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="images/mern.jpeg" alt="MERN Stack" class="course-image">
+        <h3>MERN Stack</h3>
+        <p>Master full-stack web development with MongoDB, Express.js, React, and Node.js. Build modern, scalable web applications from scratch.</p>
+        <div class="course-features">
+          <span>✓ Frontend & Backend</span>
+          <span>✓ Real Projects</span>
+          <span>✓ Industry Mentorship</span>
+        </div>
+      </div>
+      
+      <div class="course-card">
+        <img src="images/java.jpeg" alt="java" class="course-image">
+        <h3>Java Programming Excellence</h3>
+        <p>Comprehensive Java programming course covering fundamentals to advanced concepts with hands-on projects and industry best practices.</p>
+        <div class="course-features">
+          <span>✓ Core Java & Advanced</span>
+          <span>✓ Live Coding Sessions</span>
+          <span>✓ Placement Support</span>
+        </div>
+      </div>
+      
+      <div class="course-card">
+        <img src="images/cybersecurity.jpeg" alt="cybersecurity" class="course-image">
+        <h3>Master Cyber Security Essentials</h3>
+        <p>Learn ethical hacking, network security, penetration testing, and cybersecurity frameworks to protect digital assets.</p>
+        <div class="course-features">
+          <span>✓ Ethical Hacking</span>
+          <span>✓ Security Tools</span>
+          <span>✓ Certification Prep</span>
+        </div>
+      </div>
+      
+      <div class="course-card">
+        <img src="images/python.jpeg" alt="Python" class="course-image">
+        <h3>Python</h3>
+        <p>Learn Python programming from basics to advanced topics including data structures, web development, and automation.</p>
+        <div class="course-features">
+          <span>✓ Data Science Ready</span>
+          <span>✓ Web Development</span>
+          <span>✓ Automation Projects</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer style="text-align: center; padding: 20px; background-color: #f1f1f1; color: #555;">
   &copy; 2025 Faang Tech Lab. All rights reserved.
