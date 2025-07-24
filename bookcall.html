@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Call - FaangTechLab</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <nav class="navbar" style="background-color: rgb(138, 0, 255); border-radius: 0 0 75px 75px;">
+      <div class="logo">
+         <img src="images/logo.png" alt="" title="FaangTechLab logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#home" title="Home">Home</a></li>
+        <li><a href="index.html#AboutUs" title="AboutUs">AboutUs</a></li>
+        <li><a href="index.html#courses" title="Courses">Courses</a></li>
+        <li><a href="bookcall.html" title="ContactUs">ContactUs</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <button class="join-btn" title="Join" onclick="window.location.href='bookcall.html'">JoinUs</button>
+      </div>
+    </nav>
+
+    <div class="contact-container">
+        <h1 class="contact-title">Book a Call for You</h1>
+        
+        <div class="contact-card">
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email ID</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="qualification">Qualification</label>
+                    <input type="text" id="qualification" name="qualification" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="callback">Callback Option</label>
+                    <select id="callback" name="callback" required>
+                        <option value="">Select callback option</option>
+                        <option value="call">Call</option>
+                        <option value="mail">Mail</option>
+                        <option value="whatsapp">WhatsApp</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="queries">Post Queries</label>
+                    <textarea id="queries" name="queries" rows="5" placeholder="Enter your queries here..."></textarea>
+                </div>
+                
+                <button type="submit" class="book-call-btn">Book a Call</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+</script>
+</body>
+</html>

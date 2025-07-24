@@ -29,7 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+  padding: 5px 50px;
   margin-top: 0;
   position: fixed;
   top: 0;
@@ -38,10 +38,23 @@ body {
   z-index: 100;
   background: transparent;
   transition: background-color 0.3s ease;
+  border-radius: 0 0 15px 15px;
+}
+.btn{
+  background: orange;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
 }
 
 .navbar.scrolled {
   background: linear-gradient(135deg, #4b6aff, #c471f5);
+  border-radius: 0 0 75px 75px;
 }
 
 .logo {
@@ -222,8 +235,8 @@ button:hover{
 .matter{
     max-width: 600px;
   font-size: 16px;
-  
-  color: white;
+  color: #212529;
+  line-height: 2;
 }
 .dreamtext{
   /* border: 2px solid black; */
@@ -594,4 +607,81 @@ button:hover{
   color: #666;
   font-size: 16px;
   line-height: 1.6;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 120px auto 50px;
+  padding: 40px 20px;
+}
+
+.contact-title {
+  text-align: center;
+  color: #4255A4;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.contact-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #4255A4;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4255A4;
+}
+
+.book-call-btn {
+  background: linear-gradient(135deg, #4b6aff, #c471f5);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.book-call-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(75, 106, 255, 0.4);
 }
