@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FaangTechLab</title>
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header class="hero" id="home">
@@ -37,6 +38,7 @@
      
 
     <section class="hero-content">
+      <div class="hero-main">
       <h1>Empowering Minds Building Future With <span class="animated-text">FAANGTECHLAB</span> Platform</h1>
       <p>
         Experience coding at FaangTechLab - it's for everyone! Our practice-oriented courses make starting your IT career effortless. Join us today to master coding and launch a successful tech career. With personalaised mentorship and real-time projects, we ensure you're equipped with industry-relevant skills. faangTechLab is your stepping stone to a brighter future in tech!
@@ -70,12 +72,13 @@
     <p>Prepare for industry level exposure with some of the essential projects that will help you enhance your skills.</p>
   </div>
 </section>
-<hr>
+
 </section>
   </header>
   
-  <h1 class="about">About us</h1>
   <div class="aboutus" id="AboutUs">
+    <br>
+    <h1 class="about">About Us</h1>
     <div class="story-card">
       <h2 class="ourstory"><b>Our Story</b></h2>
       <br>
@@ -156,72 +159,233 @@ When it started it's just "me, "now we've grown into a team of
        <path d="M3 17L9 11L13 15L21 7" />
     </svg>
   </div>
-  <div class="container1">
-  <div class="block">
-    <h2>Learn New Skills with Expert Trainers</h2>
-    <p>Attend live classes at our institute and gain hands-on experience under the guidance of top educators.</p>
-  </div>
-
-  <div class="block">
-    <h2>Engaging Classroom Environment</h2>
-    <p>Interact with peers, participate in group discussions, and build communication skills in a real learning atmosphere.</p>
-  </div>
-
-  <div class="block">
-    <h2>Trusted by 100's of Students</h2>
-    <p>Join our offline programs and become a part of a growing community of learners from across the region.</p>
-  </div>
-</div> 
 
 <section id="courses" class="courses-section">
   <div class="courses-container">
     <h1 class="courses-title">Courses We Offered</h1>
-    
-   
-    
     <div class="courses-grid">
-      <div class="course-card">
+      <div class="course-card" onclick="openCoursePopup('mern')">
         <img src="images/mern.jpeg" alt="MERN Stack" class="course-image">
         <h3>MERN Stack</h3>
-        <p>Master full-stack web development with MongoDB, Express.js, React, and Node.js. Build modern, scalable web applications from scratch.</p>
-        <div class="course-features">
-          <span>✓ Frontend & Backend</span>
-          <span>✓ Real Projects</span>
-          <span>✓ Industry Mentorship</span>
+        <p class="course-description">Master full-stack web development with MongoDB, Express.js, React, and Node.js...</p>
+        <div class="course-buttons">
+          <button class="enroll-btn" onclick="event.stopPropagation(); window.location.href='bookcall.html'">Enroll Now</button>
+          <button class="know-more-btn" onclick="event.stopPropagation(); openCoursePopup('mern')">Know more</button>
         </div>
       </div>
       
-      <div class="course-card">
-        <img src="images/java.jpeg" alt="java" class="course-image">
+      <div class="course-card" onclick="openCoursePopup('java')">
+        <img src="images/java.jpeg" alt="Java" class="course-image">
         <h3>Java Programming Excellence</h3>
-        <p>Comprehensive Java programming course covering fundamentals to advanced concepts with hands-on projects and industry best practices.</p>
-        <div class="course-features">
-          <span>✓ Core Java & Advanced</span>
-          <span>✓ Live Coding Sessions</span>
-          <span>✓ Placement Support</span>
+        <p class="course-description">Comprehensive Java programming course covering fundamentals to advanced concepts...</p>
+        <div class="course-buttons">
+          <button class="enroll-btn" onclick="event.stopPropagation(); window.location.href='bookcall.html'">Enroll Now</button>
+          <button class="know-more-btn" onclick="event.stopPropagation(); openCoursePopup('java')">Know more</button>
         </div>
       </div>
       
-      <div class="course-card">
-        <img src="images/cybersecurity.jpeg" alt="cybersecurity" class="course-image">
+      <div class="course-card" onclick="openCoursePopup('cybersecurity')">
+        <img src="images/cybersecurity.jpeg" alt="Cybersecurity" class="course-image">
         <h3>Master Cyber Security Essentials</h3>
-        <p>Learn ethical hacking, network security, penetration testing, and cybersecurity frameworks to protect digital assets.</p>
-        <div class="course-features">
-          <span>✓ Ethical Hacking</span>
-          <span>✓ Security Tools</span>
-          <span>✓ Certification Prep</span>
+        <p class="course-description">Learn ethical hacking, network security, penetration testing...</p>
+        <div class="course-buttons">
+          <button class="enroll-btn" onclick="event.stopPropagation(); window.location.href='bookcall.html'">Enroll Now</button>
+          <button class="know-more-btn" onclick="event.stopPropagation(); openCoursePopup('cybersecurity')">Know more</button>
         </div>
       </div>
       
-      <div class="course-card">
+      <div class="course-card" onclick="openCoursePopup('python')">
         <img src="images/python.jpeg" alt="Python" class="course-image">
-        <h3>Python</h3>
-        <p>Learn Python programming from basics to advanced topics including data structures, web development, and automation.</p>
-        <div class="course-features">
-          <span>✓ Data Science Ready</span>
-          <span>✓ Web Development</span>
-          <span>✓ Automation Projects</span>
+        <h3>Python Programming</h3>
+        <p class="course-description">Learn Python programming from basics to advanced topics...</p>
+        <div class="course-buttons">
+          <button class="enroll-btn" onclick="event.stopPropagation(); window.location.href='bookcall.html'">Enroll Now</button>
+          <button class="know-more-btn" onclick="event.stopPropagation(); openCoursePopup('python')">Know more</button>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Course Popup Modal -->
+<div id="coursePopup" class="popup-overlay" onclick="closeCoursePopup()">
+  <div class="popup-content" onclick="event.stopPropagation()">
+    <span class="close-btn" onclick="closeCoursePopup()">&times;</span>
+    <div id="popupContent">
+      <!-- Dynamic content will be loaded here -->
+    </div>
+  </div>
+</div>
+
+<script>
+const courseData = {
+  mern: {
+    title: "MERN Stack Development",
+    image: "images/mern.jpeg",
+    description: "Master full-stack web development with MongoDB, Express.js, React, and Node.js. Build modern, scalable web applications from scratch.",
+    level: "Beginner to Advanced",
+    features: [
+      "Frontend & Backend Development",
+      "Real-time Projects",
+      "Industry Mentorship",
+      "Job Placement Support",
+      "MongoDB Database Management",
+      "Express.js Server Development",
+      "React Dynamic UI",
+      "Node.js Backend Services"
+    ],
+    curriculum: [
+      "HTML, CSS, JavaScript Fundamentals",
+      "React.js Components & Hooks",
+      "Node.js & Express.js",
+      "MongoDB & Database Design",
+      "RESTful APIs Development",
+      "Authentication & Authorization",
+      "Deployment & DevOps"
+    ]
+  },
+  java: {
+    title: "Java Programming Excellence",
+    image: "images/java.jpeg",
+    description: "Comprehensive Java programming course covering fundamentals to advanced concepts with hands-on projects and industry best practices.",
+    level: "Beginner to Advanced",
+    features: [
+      "Core Java & Advanced Concepts",
+      "Live Coding Sessions",
+      "Placement Support",
+      "Industry Projects",
+      "Spring Framework",
+      "Hibernate ORM",
+      "Microservices Architecture",
+      "Unit Testing"
+    ],
+    curriculum: [
+      "Java Fundamentals & OOP",
+      "Data Structures & Algorithms",
+      "Exception Handling",
+      "Collections Framework",
+      "Multithreading",
+      "Spring Boot Framework",
+      "Database Integration",
+      "Project Development"
+    ]
+  },
+  cybersecurity: {
+    title: "Master Cyber Security Essentials",
+    image: "images/cybersecurity.jpeg",
+    description: "Comprehensive cybersecurity training covering network security, penetration testing, vulnerability assessment, and incident response.",
+    level: "Intermediate to Advanced",
+    features: [
+      "Ethical Hacking",
+      "Security Tools & Frameworks",
+      "Certification Preparation",
+      "Hands-on Labs",
+      "Network Security",
+      "Penetration Testing",
+      "Vulnerability Assessment",
+      "Incident Response"
+    ],
+    curriculum: [
+      "Cybersecurity Fundamentals",
+      "Network Security Protocols",
+      "Ethical Hacking Techniques",
+      "Penetration Testing Tools",
+      "Vulnerability Assessment",
+      "Security Frameworks",
+      "Incident Response",
+      "Certification Preparation"
+    ]
+  },
+  python: {
+    title: "Python Programming",
+    image: "images/python.jpeg",
+    description: "Master Python for web development, data science, and automation. Learn Django framework, data analysis with pandas, web scraping, and API development.",
+    level: "Beginner to Advanced",
+    features: [
+      "Data Science Ready",
+      "Web Development with Django",
+      "Automation Projects",
+      "Machine Learning Basics",
+      "API Development",
+      "Web Scraping",
+      "Data Analysis",
+      "GUI Development"
+    ],
+    curriculum: [
+      "Python Fundamentals",
+      "Data Structures & Algorithms",
+      "Django Web Framework",
+      "Data Analysis with Pandas",
+      "Web Scraping",
+      "API Development",
+      "Machine Learning Basics",
+      "Project Development"
+    ]
+  }
+};
+
+function openCoursePopup(courseId) {
+  const course = courseData[courseId];
+  const popupContent = document.getElementById('popupContent');
+  
+  popupContent.innerHTML = `
+    <div class="popup-left">
+      <img src="${course.image}" alt="${course.title}" class="popup-image">
+      <h2 class="popup-course-title">${course.title}</h2>
+      <div class="course-meta">
+        <span class="level">� Level: ${course.level}</span>
+      </div>
+      <div class="popup-buttons">
+        <button class="popup-enroll-btn" onclick="window.location.href='bookcall.html'">Enroll Now</button>
+        <button class="popup-close-btn" onclick="closeCoursePopup()">Close</button>
+      </div>
+    </div>
+    
+    <div class="popup-right">
+      <span class="close-btn" onclick="closeCoursePopup()">&times;</span>
+      
+      <p class="popup-description">${course.description}</p>
+      
+      <div class="features-section">
+        <h3>What You'll Learn:</h3>
+        <div class="features-grid">
+          ${course.features.map(feature => `<span class="feature-item"> ${feature}</span>`).join('')}
+        </div>
+      </div>
+   
+  `;
+  
+  document.getElementById('coursePopup').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCoursePopup() {
+  document.getElementById('coursePopup').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+</script>
+
+<section class="training-tools-section">
+  <div class="tools-container">
+    <h2 class="tools-title">Tools Used for Training</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <img src="images/codegym.jpeg" alt="CodeGym" class="tool-image">
+        <h3>CodeGym</h3>
+        <p>Interactive learning platform offering hands-on training in Java, Python, and other languages. With 1200+ practical tasks and gamified learning paths, CodeGym makes coding fun and effective.</p>
+
+      </div>
+      
+      <div class="tool-card">
+        <img src="images/leetcode.png" alt="LeetCode" class="tool-image">
+        <h3>LeetCode</h3>
+        <p>world's leading platform to Sharpen your problem-solving skills and prepare for top product-based companies with curated LeetCode problem sets and contests.</p>
+      </div>
+      
+      <div class="tool-card">
+        <img src="images/hackerrank.png" alt="HackerRank" class="tool-image">
+        <h3>HackerRank</h3>
+        <p>Comprehensive coding platform for skill development and assessment. Practice programming challenges across multiple domains and programming languages.</p>
       </div>
     </div>
   </div>
@@ -236,8 +400,57 @@ When it started it's just "me, "now we've grown into a team of
     </div>
 </div>
 
-<footer style="text-align: center; padding: 20px; background-color: #f1f1f1; color: #555;">
-  &copy; 2025 Faang Tech Lab. All rights reserved.
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="FaangTechLab logo">
+        <h3>FaangTechLab</h3>
+      </div>
+      <!-- <p>Empowering minds and building futures with quality tech education.</p> -->
+    </div>
+    
+    <div class="footer-section">
+      <h4>Our Courses</h4>
+      <ul>
+        <li><a href="#courses">MERN Stack</a></li>
+        <li><a href="#courses">Java Programming</a></li>
+        <li><a href="#courses">Cyber Security</a></li>
+        <li><a href="#courses">Python</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#AboutUs">About Us</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="bookcall.html">Contact Us</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Address</h4>
+      <p>📍 Lakshmipuram main road, opposite Sri patibandla sitaramaiah high school,<br>
+      Guntur,Andhra Pradesh (1st floor).<br>
+      India - 500001<br>
+      📞  +91  99089 70375<br>
+      ✉️ learn@faangtechlab.com</p>
+    </div>
+  </div>
+  
+  <hr class="footer-divider">
+  
+  <div class="footer-bottom">
+    <div class="social-links">
+      <a href="https://www.facebook.com/p/FAANG-Tech-Lab-61563588312882" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/faangtechlab/?hl=en" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/watch?v=Urli8cdfPdU" title="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2025 Faang Tech Lab. All rights reserved.</p>
+  </div>
 </footer>
 <script>
 window.addEventListener('scroll', function() {
