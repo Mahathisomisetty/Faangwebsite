@@ -5,23 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FaangTechLab</title>
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
+  <header class="hero" id="home">
+    <nav class="navbar" id="navbar">
       <div class="logo">
          <img src="images/logo.png" alt="" title="FaangTechLab logo">
       </div>
       <ul class="nav-links">
         <li><a href="#home" title="Home">Home</a></li>
         <li><a href="#AboutUs" title="AboutUs">AboutUs</a></li>
-        <li><a href="#" title="Courses">Courses</a></li>
-        <!-- <li><a href="#">Blog</a></li> -->
-        <li><a href="#" title="ContactUs">ContactUs</a></li>
+        <li><a href="#courses" title="Courses">Courses</a></li>
+        <li><a href="bookcall.html" title="ContactUs">ContactUs</a></li>
       </ul>
       <div class="nav-buttons">
-        <button class="join-btn" title="Join">JoinUs</button>
-        <button class="login-btn" title="Login">Log In</button>
+       <button class="btn" onclick="window.location.href='bookcall.html'">Join us</button>
       </div>
     </nav>
      <div class="wave-svg">
@@ -30,14 +29,56 @@
           d="M0,140 C360,290 720,90 1080,150 C1320,230 1440,10 1440,50 L1440,0 L0,0 Z"></path>
       </svg>
     </div>
+    
+    <br>
+    <br>
+    <br>
+    
+     
 
-    <section class="hero-content">
-      <h1>Empowering Minds Building Future With FAANGTECHLAB Platform</h1>
-      <p>
-        Experience coding at FaangTechLab - it's for everyone! Our practice-oriented courses make starting your IT career effortless. Join us today to master coding and launch a successful tech career. With personalaised mentorship and real-time projects, we ensure you're equipped with industry-relevant skills. faangTechLab is your stepping stone to a brighter future in tech!
-      </p>
-    </section>
-    <!-- <hr> -->
+    <div class="hero-container">
+      <section class="hero-content">
+        <div class="hero-main">
+          <h1>Empowering Minds Building Future With <span class="animated-text">FAANGTECHLAB</span> Platform</h1>
+          <p>
+            Experience coding at FaangTechLab - it's for everyone! Our practice-oriented courses make starting your IT career effortless. Join us today to master coding and launch a successful tech career. With personalaised mentorship and real-time projects, we ensure you're equipped with industry-relevant skills. faangTechLab is your stepping stone to a brighter future in tech!
+          </p>
+          <button class="btn" onclick="window.location.href='bookcall.html'">Join us</button>
+        </div>
+        
+        <div class="hero-image">
+          <img src="images/main.jpg" alt="Students learning coding at FaangTechLab">
+        </div>
+      </section>
+    </div>
+<br>
+<br>
+    <hr>
+      <!-- Carousel Section -->
+  <section class="carousel-section">
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-slide">
+          <img src="images/image1.jpg" alt="Students in classroom">
+        </div>
+        <div class="carousel-slide">
+          <img src="images/image2.jpg" alt="Coding session">
+        </div>
+        <div class="carousel-slide">
+          <img src="images/image3.jpg" alt="Tech training">
+        </div>
+       
+      </div>
+      <button class="carousel-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="carousel-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+      <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        
+      </div>
+    </div>
+  </section>
     <div class="dreamtext"><h1>Our Dream is Transforming Learning Globally</h1>
       <br>
       <p>Experience a global transformation in learning with FAANGTechLab Our mission is to revolutionize education by offering in-person tech courses that cater to all levels, from beginners to advanced learners. Delve into the dynamic realms of JAVA Development and Cybersecurity, essential for anyone aspiring to excel in the tech industry. At FAANGTechLab we provide the perfect platform to kickstart your journey into the ever-evolving world of technology. Whether you're just starting out or aiming to enhance your skills, our comprehensive programs ensure you're equipped with the knowledge and expertise needed to thrive in today's digital landscape. Join us and unlock endless possibilities for personal and professional growth. Don't just learn – innovate with FAANGTechLab!</p>
@@ -64,7 +105,438 @@
     <p>Prepare for industry level exposure with some of the essential projects that will help you enhance your skills.</p>
   </div>
 </section>
+<br>
 <hr>
+<br>
+<!-- Hiring Partners Section -->
+<section class="hiring-partners-section">
+  <div class="partners-container">
+    <h2 class="partners-title">Our Hiring Partners</h2>
+    <div class="partners-grid">
+      <div class="partner-card">
+        <img src="images/accenture.png" alt="accenture">
+      </div>
+      <div class="partner-card">
+        <img src="images/hcl.png" alt="hcl">
+      </div>
+      <div class="partner-card">
+        <img src="images/tcs.png" alt="tcs">
+      </div>
+      <div class="partner-card">
+        <img src="images/ansys.png" alt="ansys">
+      </div>
+      <div class="partner-card">
+        <img src="images/cr.png" alt="criticalriver">
+      </div>
+      <div class="partner-card">
+        <img src="images/signitive.jpeg" alt="signitive">
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+  </header>
+  <div class="aboutus" id="AboutUs">
+    <br>
+    <h1 class="about">About Us</h1>
+    
+    
+      
+      <div class="story-section">
+        <div class="story-content">
+          <h2 class="ourstory"><b>Our Story</b></h2>
+          <hr>
+          <br>
+          <p class="story">Seeing many MS students struggle to find their first job in the USA made me realize something important. Many of us weren't properly prepared before stepping into the real world.
+That's whenI had an idea: why not teach and guide engineering students the right way before they graduate?
+Why not give them the skills and confidence they need to succeed?
+That thought and idea made me to come back to India and
+dedicate myself to this mission. It hasn't been easy, but we're making it happen.
+When it started it's just "me, "now we've grown into a team of
+70 passionate people at Faang Tech Lab. This is my way of giving back, and it fills my heart every single day.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="founders-section">
+      <h2 class="founders-title">Meet Our Founders</h2>
+      <div class="founders-grid">
+        <div class="founder-card">
+          <img src="images/venkat.jpg" alt="Founder 1" class="founder-image">
+          <h3 class="founder-name">Venkat Jillelamudi</h3>
+          <p class="founder-designation">C.E.O</p>
+        </div>
+        
+        <div class="founder-card">
+          <img src="images/ashok.jpg" alt="Founder 2" class="founder-image">
+          <h3 class="founder-name">Ashok Babu Kolla</h3>
+          <p class="founder-designation">Managing Director</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mission-vision-section">
+      <div class="mission-vision-grid">
+        <div class="mission-card">
+          <div class="card-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>Empowering individuals with Java programming and cybersecurity expertise to excel in technology through world-class education, certification, and real-world experience.</p>
+        </div>
+        
+        <div class="vision-card">
+          <div class="card-icon">🚀</div>
+          <h3>Our Vision</h3>
+          <p>To be the global leader in e-learning, inspiring and cultivating tech innovators with cutting-edge programs, support, and opportunities for professional growth.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="standout-section">
+      <h2 class="standout-title">Things Made Us Stand Out</h2>
+      <div class="standout-grid">
+        <div class="standout-card">
+          <div class="card-icon">💡</div>
+          <h3>Limited Batch Size</h3>
+          <hr>
+          <p>Students are limited to 20 to 30 every batch so that we can focus on each learner personally and help them develop confidence.</p>
+        </div>
+        
+        <div class="standout-card">
+          <div class="card-icon">❄️</div>
+          <h3>AC Classrooms</h3>
+          <hr>
+          <p>We have fully air-conditioned classrooms for you that provide a comfort setting in which you may learn in peace.</p>
+        </div>
+        
+        <div class="standout-card">
+          <div class="card-icon">👨‍🏫</div>
+          <h3>Personal Guidance</h3>
+          <hr>
+          <p>You will receive personalized guidance with dedicated support from our experienced trainers.</p>
+        </div>
+        
+        <div class="standout-card">
+          <div class="card-icon">📹</div>
+          <h3>Class Recordings</h3>
+          <hr>
+          <p>We record each session and make it available to you so you don't miss any important topics.</p>
+        </div>
+        
+        <div class="standout-card">
+          <div class="card-icon">📊</div>
+          <h3>Weekly Assessment</h3>
+          <hr>
+          <p>We conduct one test per week, up to a total of 10 to 12 tests. Weekly evaluations allow you to reflect and improve your speed.</p>
+        </div>
+        
+        <div class="standout-card">
+          <div class="card-icon">🎭</div>
+          <h3>Mock Interviews</h3>
+          <hr>
+          <p>You will be given plenty of company-specific Mock examinations to prepare for real-time exposure.</p>
+        </div>
+        
+        <div class="standout-card">
+          <div class="card-icon">🏢</div>
+          <h3>Placement Cell</h3>
+          <hr>
+          <p>Our specialised and dedicated Placement Cell team will help you secure your first job.</p>
+        </div>
+        
+        <div class="standout-card">
+          <div class="card-icon">🚀</div>
+          <h3>Day One Placements</h3>
+          <hr>
+          <p>At FaangTechlab, kickstart your career with immediate placement opportunities from day one. Attend interviews and secure roles in Java, Cyber Security and testing upon enrollment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<section id="courses" class="courses-section">
+  <div class="courses-container">
+    <div class="courses-header">
+      <div class="circle-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <path d="M3 17L9 11L13 15L21 7" />
+        </svg>
+      </div>
+      <h1 class="courses-title">Courses We Offered</h1>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card" onclick="openCoursePopup('mern')">
+        <img src="images/mern.jpeg" alt="MERN Stack" class="course-image">
+        <h3>MERN Stack</h3>
+        <p class="course-description">Master full-stack web development with MongoDB, Express.js, React, and Node.js...</p>
+        <div class="course-buttons">
+          <!-- <button class="enroll-btn" onclick="event.stopPropagation(); window.location.href='bookcall.html'">Enroll Now</button> -->
+          <button class="know-more-btn" onclick="event.stopPropagation(); openCoursePopup('mern')">Know more</button>
+        </div>
+      </div>
+      
+      <div class="course-card" onclick="openCoursePopup('java')">
+        <img src="images/java.jpeg" alt="Java" class="course-image">
+        <h3>Java Programming Excellence</h3>
+        <p class="course-description">Comprehensive Java programming course covering fundamentals to advanced concepts...</p>
+        <div class="course-buttons">
+          <!-- <button class="enroll-btn" onclick="event.stopPropagation(); window.location.href='bookcall.html'">Enroll Now</button> -->
+          <button class="know-more-btn" onclick="event.stopPropagation(); openCoursePopup('java')">Know more</button>
+        </div>
+      </div>
+      
+      <div class="course-card" onclick="openCoursePopup('cybersecurity')">
+        <img src="images/cybersecurity.jpeg" alt="Cybersecurity" class="course-image">
+        <h3>Master Cyber Security Essentials</h3>
+        <p class="course-description">Learn ethical hacking, network security, penetration testing...</p>
+        <div class="course-buttons">
+          <!-- <button class="enroll-btn" onclick="event.stopPropagation(); window.location.href='bookcall.html'">Enroll Now</button> -->
+          <button class="know-more-btn" onclick="event.stopPropagation(); openCoursePopup('cybersecurity')">Know more</button>
+        </div>
+      </div>
+      
+      <div class="course-card" onclick="openCoursePopup('python')">
+        <img src="images/python.jpeg" alt="Python" class="course-image">
+        <h3>Python Programming</h3>
+        <p class="course-description">Learn Python programming from basics to advanced topics...</p>
+        <div class="course-buttons">
+          <!-- <button class="enroll-btn" onclick="event.stopPropagation(); window.location.href='bookcall.html'">Enroll Now</button> -->
+          <button class="know-more-btn" onclick="event.stopPropagation(); openCoursePopup('python')">Know more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Course Popup Modal -->
+<div id="coursePopup" class="popup-overlay" onclick="closeCoursePopup()">
+  <div class="popup-content" onclick="event.stopPropagation()">
+    <span class="close-btn" onclick="closeCoursePopup()">&times;</span>
+    <div id="popupContent">
+      <!-- Dynamic content will be loaded here -->
+    </div>
+  </div>
+</div>
+
+<script>
+const courseData = {
+  mern: {
+    title: "MERN Stack Development",
+    image: "images/mern.jpeg",
+    description: "Master full-stack web development with MongoDB, Express.js, React, and Node.js. Build modern, scalable web applications from scratch.",
+    level: "Beginner to Advanced",
+    features: [
+      "Frontend & Backend Development",
+      "Real-time Projects",
+      "Industry Mentorship",
+      "Job Placement Support",
+      "MongoDB Database Management",
+      "Express.js Server Development",
+      "React Dynamic UI",
+      "Node.js Backend Services"
+    ],
+    curriculum: [
+      "HTML, CSS, JavaScript Fundamentals",
+      "React.js Components & Hooks",
+      "Node.js & Express.js",
+      "MongoDB & Database Design",
+      "RESTful APIs Development",
+      "Authentication & Authorization",
+      "Deployment & DevOps"
+    ]
+  },
+  java: {
+    title: "Java Programming Excellence",
+    image: "images/java.jpeg",
+    description: "Comprehensive Java programming course covering fundamentals to advanced concepts with hands-on projects and industry best practices.",
+    level: "Beginner to Advanced",
+    features: [
+      "Core Java & Advanced Concepts",
+      "Live Coding Sessions",
+      "Placement Support",
+      "Industry Projects",
+      "Spring Framework",
+      "Hibernate ORM",
+      "Microservices Architecture",
+      "Unit Testing"
+    ],
+    curriculum: [
+      "Java Fundamentals & OOP",
+      "Data Structures & Algorithms",
+      "Exception Handling",
+      "Collections Framework",
+      "Multithreading",
+      "Spring Boot Framework",
+      "Database Integration",
+      "Project Development"
+    ]
+  },
+  cybersecurity: {
+    title: "Master Cyber Security Essentials",
+    image: "images/cybersecurity.jpeg",
+    description: "Comprehensive cybersecurity training covering network security, penetration testing, vulnerability assessment, and incident response.",
+    level: "Intermediate to Advanced",
+    features: [
+      "Ethical Hacking",
+      "Security Tools & Frameworks",
+      "Certification Preparation",
+      "Hands-on Labs",
+      "Network Security",
+      "Penetration Testing",
+      "Vulnerability Assessment",
+      "Incident Response"
+    ],
+    curriculum: [
+      "Cybersecurity Fundamentals",
+      "Network Security Protocols",
+      "Ethical Hacking Techniques",
+      "Penetration Testing Tools",
+      "Vulnerability Assessment",
+      "Security Frameworks",
+      "Incident Response",
+      "Certification Preparation"
+    ]
+  },
+  python: {
+    title: "Python Programming",
+    image: "images/python.jpeg",
+    description: "Master Python for web development, data science, and automation. Learn Django framework, data analysis with pandas, web scraping, and API development.",
+    level: "Beginner to Advanced",
+    features: [
+      "Data Science Ready",
+      "Web Development with Django",
+      "Automation Projects",
+      "Machine Learning Basics",
+      "API Development",
+      "Web Scraping",
+      "Data Analysis",
+      "GUI Development"
+    ],
+    curriculum: [
+      "Python Fundamentals",
+      "Data Structures & Algorithms",
+      "Django Web Framework",
+      "Data Analysis with Pandas",
+      "Web Scraping",
+      "API Development",
+      "Machine Learning Basics",
+      "Project Development"
+    ]
+  }
+};
+
+function openCoursePopup(courseId) {
+  const course = courseData[courseId];
+  const popupContent = document.getElementById('popupContent');
+  
+  popupContent.innerHTML = `
+    <div class="popup-left">
+      <img src="${course.image}" alt="${course.title}" class="popup-image">
+      <h2 class="popup-course-title">${course.title}</h2>
+      <div class="course-meta">
+        <span class="level">� Level: ${course.level}</span>
+      </div>
+      <div class="popup-buttons">
+        <button class="popup-enroll-btn" onclick="window.location.href='bookcall.html'">Enroll Now</button>
+        <button class="popup-close-btn" onclick="closeCoursePopup()">Close</button>
+      </div>
+    </div>
+    
+    <div class="popup-right">
+      <span class="close-btn" onclick="closeCoursePopup()">&times;</span>
+      
+      <p class="popup-description">${course.description}</p>
+      
+      <div class="features-section">
+        <h3>What You'll Learn:</h3>
+        <div class="features-grid">
+          ${course.features.map(feature => `<span class="feature-item"> ${feature}</span>`).join('')}
+        </div>
+      </div>
+   
+  `;
+  
+  document.getElementById('coursePopup').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCoursePopup() {
+  document.getElementById('coursePopup').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Auto-play carousel
+setInterval(() => {
+  moveSlide(1);
+}, 5000);
+</script>
+
+<section class="training-tools-section">
+  <div class="tools-container">
+    <h2 class="tools-title">Tools Used for Training</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <img src="images/codegym.jpeg" alt="CodeGym" class="tool-image">
+        <h3>CodeGym</h3>
+        <p>Interactive learning platform offering hands-on training in Java, Python, and other languages. With 1200+ practical tasks and gamified learning paths, CodeGym makes coding fun and effective.</p>
+
+      </div>
+      
+      <div class="tool-card">
+        <img src="images/leetcode.png" alt="LeetCode" class="tool-image">
+        <h3>LeetCode</h3>
+        <p>world's leading platform to Sharpen your problem-solving skills and prepare for top product-based companies with curated LeetCode problem sets and contests.</p>
+      </div>
+      
+      <div class="tool-card">
+        <img src="images/hackerrank.png" alt="HackerRank" class="tool-image">
+        <h3>HackerRank</h3>
+        <p>Comprehensive coding platform for skill development and assessment. Practice programming challenges across multiple domains and programming languages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="training-steps-section">
+  <div class="steps-container">
+    <h2 class="steps-title">Our Training Process</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Assessment & Enrollment</h3>
+        <p>Initial skill assessment and course selection based on your career goals and current knowledge level.</p>
+      </div>
+      
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Foundation Learning</h3>
+        <p>Build strong fundamentals with our structured curriculum and hands-on practice sessions.</p>
+      </div>
+      
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Practical Projects</h3>
+        <p>Work on real-world projects to apply your knowledge and build a professional portfolio.</p>
+      </div>
+      
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <h3>Mock Interviews</h3>
+        <p>Practice with industry-standard mock interviews and receive personalized feedback.</p>
+      </div>
+      
+      <div class="step-card">
+        <div class="step-number">5</div>
+        <h3>Job Placement</h3>
+        <p>Get placed in top companies with our dedicated placement support and industry connections.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="content">
     <img class="girlimage" src="images/free_img.png" alt="girlimage">
     <div class="matter">
@@ -73,49 +545,445 @@
     <p>At FaangTechLab, We invite you to experience our hands-on learning approach through our free demo sessions. These sessions provide a glimpse into our cutting-edge Java programming and cybersecurity courses, designed by industry experts. Whether you're looking to enhance your skills or explore a new career path, our demo sessions are the perfect opportunity to see how we can help you achieve your goals in technology and education.</p>
     </div>
 </div>
-  </header>
-  <h1 class="about">About us</h1>
-  <div class="aboutus" id="AboutUs">
-    <br>
-    <h2 class="ourstory"><b>Our Story</b></h2>
-    <br>
-    <br>
-    <br>
-    <p class="story">Seeing many MS students struggle to find their first job in the USA made me realize something important. Many of us weren't properly prepared before stepping into the real world.
-That's whenI had an idea: why not teach and guide engineering students the right way before they graduate?
-Why not give them the skills and confidence they need to succeed?
-That thought and idea made me to come back to India and
-dedicate myself to this mission. It hasn't been easy, but we're making it happen.
-When it started it's just “me, "now we've grown into a team of
-70 passionate people at Faang Tech Lab. This is my way of giving back, and it fills my heart every single day.</p>
-  </div>
-  <div class="circle-icon">
-    <!-- SVG: Upward trend arrow -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-       <path d="M3 17L9 11L13 15L21 7" />
-    </svg>
-  </div>
-  <div class="container1">
-  <div class="block">
-    <h2>Learn New Skills with Expert Trainers</h2>
-    <p>Attend live classes at our institute and gain hands-on experience under the guidance of top educators.</p>
-  </div>
 
-  <div class="block">
-    <h2>Engaging Classroom Environment</h2>
-    <p>Interact with peers, participate in group discussions, and build communication skills in a real learning atmosphere.</p>
+<!-- Contact Card Section -->
+<section class="contact-card-section">
+  <div class="contact-card-container">
+    <div class="contact-card-content">
+      <h2>Shape Your Future in Tech!</h2>
+      <p>Have questions, or need guidance? Whether you're looking to join our programs or simply want more information, we're always ready to assist! Reach out to us and we'll get back to you promptly. At Faangtechlab, we believe in providing the support you need to excel in your tech career.</p>
+      <button class="contact-btn" onclick="window.location.href='bookcall.html'">Get In Touch</button>
+    </div>
+    <div class="contact-card-image">
+      <img src="images/contact.jpg" alt="Tech guidance">
+    </div>
   </div>
+</section>
 
-  <div class="block">
-    <h2>Trusted by 100's of Students</h2>
-    <p>Join our offline programs and become a part of a growing community of learners from across the region.</p>
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="faq-container">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3>What is the duration of the training program?</h3>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>The training program lasts for 3 Months.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3>Are the practice tests included in the course?</h3>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, we provide comprehensive practice tests and mock interviews to help you prepare for real-world scenarios and placement tests.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3>Do I get to work on real-time projects?</h3>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely! Our curriculum includes hands-on real-time projects that simulate industry scenarios, giving you practical experience with current technologies.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3>How are the instructors selected?</h3>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Our instructors are carefully selected industry professionals with extensive experience in their respective fields. They undergo a rigorous selection process to ensure quality education.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3>What kind of support is provided during the course?</h3>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>We provide 24/7 doubt resolution, personalized mentorship, career guidance, and continuous support throughout your learning journey.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3>Are there any job placement opportunities after the course?</h3>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, we have a dedicated placement cell and partnerships with leading companies. We also offer Day One Placements where you can secure job opportunities upon enrollment.</p>
+        </div>
+      </div>
+    </div>
   </div>
-</div> 
+</section>
 
-<footer style="text-align: center; padding: 20px; background-color: #f1f1f1; color: #555;">
-  &copy; 2025 Faang Tech Lab. All rights reserved.
+<section class="learner-outcomes-section">
+  <div class="outcomes-container">
+    <div class="outcomes-content">
+      <div class="outcomes-left">
+        <h2 class="outcomes-title">Learner Outcomes</h2>
+        <p class="outcomes-subtitle">What you'll achieve after completing our training program</p>
+        
+        <div class="outcomes-list">
+          <div class="outcome-item">
+            <span class="tick-mark">✓</span>
+            <p>Master industry-relevant programming skills and frameworks</p>
+          </div>
+
+          
+          <div class="outcome-item">
+            <span class="tick-mark">✓</span>
+            <p>Gain confidence through mock interviews and assessments</p>
+          </div>
+          
+          <div class="outcome-item">
+            <span class="tick-mark">✓</span>
+            <p>Develop problem-solving and analytical thinking abilities</p>
+          </div>
+          
+          <div class="outcome-item">
+            <span class="tick-mark">✓</span>
+            <p>Secure job placement in top tech companies</p>
+          </div>
+          
+          <div class="outcome-item">
+            <span class="tick-mark">✓</span>
+            <p>Network with industry professionals and peers</p>
+          </div>
+          
+          <div class="outcome-item">
+            <span class="tick-mark">✓</span>
+            <p>Receive lifetime career support and guidance</p>
+          </div>
+          
+          <div class="outcome-item">
+            <span class="tick-mark">✓</span>
+            <p>Stay updated with latest technology trends</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="outcomes-right">
+        <img src="images/about3.png" alt="Successful learners" class="outcomes-image">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact-details-section">
+  <div class="contact-details-container">
+    <h3 class="contact-details-title">For more details Contact Us</h3>
+    <a href="tel:+919908970375" class="contact-phone">
+      <i class="fas fa-phone"></i>
+      +91 99089 70375
+    </a>
+  </div>
+</section>
+<section class="business-stats-section">
+  <div class="stats-container">
+    <h2 class="stats-title">Our works</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number" data-target="1000">100+</div>
+        <h3 class="stat-label">Students Trained</h3>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="500">100+</div>
+        <h3 class="stat-label">Successful Placements</h3>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="100">5</div>
+        <h3 class="stat-label">Courses Offered</h3>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="20">India</div>
+        <h3 class="stat-label">Countries Served</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="reviews-section">
+  <div class="reviews-container">
+    <h2 class="reviews-title">What Our Students Say</h2>
+    <p class="reviews-subtitle">Real feedback from our successful graduates</p>
+    
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"FaangTechLab transformed my career completely. The hands-on projects and personalized mentorship helped me land my dream job at a top tech company. The instructors are industry experts who really care about student success."</p>
+        <div class="reviewer-info">
+          <img src="images/student1.jpg" alt="Priya Sharma" class="reviewer-image">
+          <div class="reviewer-details">
+            <h4 class="reviewer-name">Priya Sharma</h4>
+            <p class="reviewer-position">Software Engineer at TCS</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"The Java programming course at FaangTechLab is exceptional. Small batch sizes meant I got individual attention, and the mock interviews prepared me perfectly for real company interviews. Highly recommended!"</p>
+        <div class="reviewer-info">
+          <img src="images/student2.jpg" alt="Rahul Kumar" class="reviewer-image">
+          <div class="reviewer-details">
+            <h4 class="reviewer-name">Rahul Kumar</h4>
+            <p class="reviewer-position">Java Developer at Infosys</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"From zero coding knowledge to getting placed in a cybersecurity role - FaangTechLab made it possible. The real-time projects and 24/7 support system are game changers. Thank you for believing in me!"</p>
+        <div class="reviewer-info">
+          <img src="images/student3.jpg" alt="Anjali Reddy" class="reviewer-image">
+          <div class="reviewer-details">
+            <h4 class="reviewer-name">Anjali Reddy</h4>
+            <p class="reviewer-position">Cybersecurity Analyst at HCL</p>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="FaangTechLab logo">
+        <h3 style="color: white;">FaangTechLab</h3>
+      </div>
+      <!-- <p>Empowering minds and building futures with quality tech education.</p> -->
+    </div>
+    
+    <div class="footer-section">
+      <h4>Our Courses</h4>
+      <ul>
+        <li><a href="#courses" style="color: white;">MERN Stack</a></li>
+        <li><a href="#courses" style="color: white;">Java Programming</a></li>
+        <li><a href="#courses" style="color: white;">Cyber Security</a></li>
+        <li><a href="#courses" style="color: white;">Python</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section" >
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home" style="color: white;">Home</a></li>
+        <li><a href="#AboutUs" style="color: white;">About Us</a></li>
+        <li><a href="#courses" style="color: white;">Courses</a></li>
+        <li><a href="bookcall.html" style="color: white;">Contact Us</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section" style="color: white;">
+      <h4>Address</h4>
+       <a href="https://www.google.com/maps/place/3,+Lakshmipuram+Main+Rd,+Brindavan  +Gardens,+Guntur,+Andhra+Pradesh+522006/@16.3124704,80.4246539,17z" 
+         target="_blank" 
+         style="text-decoration: none; color: white; font-size: 20px;">
+      📍 Find us on Google Maps
+        </a>
+      <p style="color: white;"> Lakshmipuram main road, opposite Sri patibandla sitaramaiah high school,<br>
+      Guntur,Andhra Pradesh (1st floor).<br>
+      India - 500001<br>
+      📞  +91  99089 70375<br>
+      ✉️ learn@faangtechlab.com</p>
+    </div>
+  </div>
+  
+  <hr class="footer-divider">
+  
+  <div class="footer-bottom">
+    <div class="social-links">
+      <a href="https://www.facebook.com/p/FAANG-Tech-Lab-61563588312882" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/faangtechlab/?hl=en" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/watch?v=Urli8cdfPdU" title="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/faang-tech-lab-043855349/?originalSubdomain=in" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2025 Faang Tech Lab. All rights reserved.</p>
+  </div>
 </footer>
 
+<!-- WhatsApp Sticky Button -->
+<div class="whatsapp-sticky">
+  <a href="https://wa.me/+8179423238" target="_blank" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
 
-</body>
-</html>
+
+<script>
+let currentSlideIndex = 0;
+
+function showSlide(index) {
+  const track = document.querySelector('.carousel-track');
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.dot');
+  
+  if (track && slides.length > 0) {
+    track.style.transform = `translateX(-${index * 100}%)`;
+    
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[index]) {
+      dots[index].classList.add('active');
+    }
+  }
+}
+
+function moveSlide(direction) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const totalSlides = slides.length;
+  
+  currentSlideIndex += direction;
+  
+  if (currentSlideIndex >= totalSlides) {
+    currentSlideIndex = 0;
+  } else if (currentSlideIndex < 0) {
+    currentSlideIndex = totalSlides - 1;
+  }
+  
+  showSlide(currentSlideIndex);
+}
+
+function currentSlide(index) {
+  currentSlideIndex = index - 1;
+  showSlide(currentSlideIndex);
+}
+
+function toggleFAQ(element) {
+  const faqItem = element.parentElement;
+  const answer = faqItem.querySelector('.faq-answer');
+  const icon = element.querySelector('.faq-icon');
+  
+  // Close all other FAQ items
+  document.querySelectorAll('.faq-answer').forEach(item => {
+    if (item !== answer) {
+      item.classList.remove('active');
+      item.parentElement.querySelector('.faq-icon').classList.remove('active');
+    }
+  });
+  
+  // Toggle current FAQ item
+  if (answer.classList.contains('active')) {
+    answer.classList.remove('active');
+    icon.classList.remove('active');
+  } else {
+    answer.classList.add('active');
+    icon.classList.add('active');
+  }
+}
+
+// Initialize carousel when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  showSlide(0);
+  
+  // Ensure all FAQ answers are closed initially
+  document.querySelectorAll('.faq-answer').forEach(answer => {
+    answer.classList.remove('active');
+  });
+  
+  document.querySelectorAll('.faq-icon').forEach(icon => {
+    icon.classList.remove('active');
+  });
+  
+  // Auto-play carousel every 5 seconds
+  setInterval(() => {
+    moveSlide(1);
+  }, 5000);
+});
+
+// NAVBAR SCROLL EFFECT - ONLY THIS ONE
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar');
+  
+  if (window.scrollY > 10) {
+    navbar.style.background = 'linear-gradient(135deg, #4b6aff, #c471f5)';
+    navbar.style.borderRadius = '0 0 75px 75px';
+    navbar.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+    navbar.style.borderTop = 'none';
+  } else {
+    navbar.style.background = 'transparent';
+    navbar.style.borderRadius = '0 0 15px 15px';
+    navbar.style.boxShadow = 'none';
+    navbar.style.border = 'none';
+  }
+});
+
+// Business stats animated counter function
+function animateBusinessCounter(element) {
+  const target = parseInt(element.getAttribute('data-target'));
+  const duration = 2500; // 2.5 seconds
+  const increment = target / (duration / 16); // 60fps
+  let current = 0;
+  
+  element.classList.add('animate');
+  
+  const timer = setInterval(() => {
+    current += increment;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
+    }
+    element.textContent = Math.floor(current);
+  }, 16);
+}
+
+// Intersection Observer for business stats
+const businessObserverOptions = {
+  threshold: 0.3,
+  rootMargin: '0px 0px -100px 0px'
+};
+
+const businessObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const statNumbers = entry.target.querySelectorAll('.business-stat-number');
+      statNumbers.forEach((number, index) => {
+        setTimeout(() => {
+          animateBusinessCounter(number);
+        }, index * 200); // Stagger animation by 200ms
+      });
+      businessObserver.unobserve(entry.target);
+    }
+  });
+}, businessObserverOptions);
+
+// Start observing when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const businessStatsSection = document.querySelector('.business-stats-section');
+  if (businessStatsSection) {
+    businessObserver.observe(businessStatsSection);
+  }
+});
+</script>
